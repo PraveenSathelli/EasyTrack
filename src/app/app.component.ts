@@ -14,4 +14,8 @@ export class AppComponent {
 
   users = DUMMY_USERS;
 
+  onSelectEvent(id:string)
+  {
+console.log(id)
+  }
 }
