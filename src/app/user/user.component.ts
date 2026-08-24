@@ -2,14 +2,6 @@ import { Component, computed, EventEmitter, Input, Output, signal } from '@angul
 
 import { DUMMY_USERS } from '../dummy-users';
 
-const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-
-// type User ={
-//     id:string;
-//     name:string;
-//     avatar:string;
-//   };
-
 interface User {
   id: string;
   name: string;
@@ -24,17 +16,6 @@ interface User {
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-
-  // @Input({required:true}) id!:string;
-  // @Input({required:true}) avatar!: string;
-  // @Input() name!: string;
-
-  //alias type
-  // @Input({required:true}) user! : {
-  //   id:string;
-  //   name:string;
-  //   avatar:string;
-  // };
 
   @Input({ required: true }) user!: User;
 
