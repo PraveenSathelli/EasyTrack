@@ -57,4 +57,8 @@ export class TasksComponent {
     return this.tasks.filter(x => x.userId === this.id);
   }
 
+  removeTask(id: string) {
+    this.tasks = this.tasks.filter(x => x.id != id);
+  }
+
 }

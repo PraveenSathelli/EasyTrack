@@ -9,7 +9,7 @@
         @for(task of selectedUserTasks; track task.id)
         {
         <li>
-            <app-task [task]="task"></app-task>
+            <app-task [task]="task" (removeTaskByIdEvent)="removeTask($event)"></app-task>
         </li>
         }
     </ul>
