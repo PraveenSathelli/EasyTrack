@@ -37,9 +37,5 @@ export class TasksComponent {
     this.isAddingTask = false;
   }
 
-  addNewTask(task: NewTask) {
-    this.taskService.addTask(task, this.id);
-    this.isAddingTask = false;
-  }
 
 }
