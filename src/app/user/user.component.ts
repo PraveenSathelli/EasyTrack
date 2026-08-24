@@ -13,8 +13,8 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 })
 export class UserComponent {
 
-  @Input({required:true}) id!:string;
-  @Input({required:true}) avatar!: string;
+  @Input({required:true}) id?:string;
+  @Input({required:true}) avatar: string|undefined;
   @Input() name!: string;
 
   @Output() select = new EventEmitter<string>();
